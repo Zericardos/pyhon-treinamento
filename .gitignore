@@ -1,10 +1,7 @@
-.ipynb_checkpoints
 livros_py
 rename_files.py
 sync_linux.py
 data_science_py/pandas_curso
-machine_learning_py/ml_background/.git
-machine_learning_py/ml_background/__pycache__
 machine_learning_py/ml_background/aula1.py
 machine_learning_py/ml_background/aula2_classifica_busca.py
 machine_learning_py/ml_background/aula2_dados.py
@@ -29,7 +26,6 @@ machine_learning_py/machine_learning_sklearn/graph.png
 machine_learning_py/machine_learning_sklearn/tree.png
 machine_learning_py/machine_learning_sklearn/tree2.png
 machine_learning_py/machine_learning_sklearn/tree3.png
-programacao_py/avancando_oo_py/.git
 programacao_py/avancando_oo_py/aula1_properties.py
 programacao_py/avancando_oo_py/aula2_2_inheritance.py
 programacao_py/avancando_oo_py/aula2_inheritance.py
@@ -40,4 +36,3 @@ programacao_py/avancando_oo_py/aula3_polimorfismo.py
 programacao_py/descubra_o_python
 programacao_py/Ex_Files_Python_Object_Programming
 programacao_py/orientacao_objetos_python
-programacao_py/strings_manipulation/.git

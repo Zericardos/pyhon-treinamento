@@ -190,5 +190,12 @@ print("\nHipótese Nula:\n A distribuição da taxa da gorjeta é a mesma nos do
 
 print("\nHipótese Não Nula:\n A distribuição da taxa da gorjeta não é a mesma nos dois grupos")
 
+plt.close('all')
 
 # first lets take the percentage of everyone who ordered dessert
+
+porcentagem_gorjetas = gorjetas.query("sobremesa == 'Sim'").porcentagem
+porcentagem_nao_gorjetas = gorjetas.query("sobremesa == 'Não'").porcentagem
+
+# Statistics parameter
+r = ranksums(porcentagem_gorjetas, porcentagem_nao_gorjetas)
