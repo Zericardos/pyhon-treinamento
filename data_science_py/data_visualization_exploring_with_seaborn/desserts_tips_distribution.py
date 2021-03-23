@@ -198,7 +198,7 @@ porcentagem_nao_gorjetas = gorjetas.query("sobremesa == 'Não'").porcentagem
 # Statistics parameter
 r = ranksums(porcentagem_gorjetas, porcentagem_nao_gorjetas)
 
-print("Due to pvalue: {:.2f} is much greater than 0.05, both distribution are similar, so we choose Hipótese Nula:\n A distribuição da taxa da gorjeta é a mesma nos dois grupos")
+print("Due to pvalue: {:.2f} is much greater than 0.05, both distribution are similar, so we choose Hipótese Nula:\n A distribuição da taxa da gorjeta é a mesma nos dois grupos".format(r.pvalue))
 
 # Now lets evaluate if day of week affect mean tip value and its ditribution
 
@@ -231,3 +231,38 @@ grafico_diasemana_porcentagem_gorjetas_regressao = sns.lmplot(
     hue='dia_da_semana', data=gorjetas)
 grafico_diasemana_porcentagem_gorjetas_regressao.set_titles(
     'Porcentagem da gorjeta x Dia da semana')
+
+# Now lets investigate mean, percentage, people of each day
+
+# taking gorjetas.groupby('dia_da_semana').mean() will return total_de_pessoas
+# its values are weird because we get non integer, so discard it
+
+days_of_week_mean = gorjetas.groupby('dia_da_semana').mean()[[
+    'valor_da_conta', 'gorjeta', 'porcentagem']]
+print("As médias de cada dia da semana são \n{}".format(days_of_week_mean))
+print("O número de pessoas para cada dia é: \n{}"
+      .format(gorjetas.dia_da_semana.value_counts()))
+
+# We see that number of people are greater on Saturdays, but the value tips
+# ocurrs on Sundays. Maybe there are some different distribution here.
+
+# Second hypothesis test
+
+# Null Hypothesis: A distribuição do valor da conta é igual no sábado e no
+# domingo
+
+# Non-Null Hypothesis: A distribuição do valor da conta não é igual no sábado
+# e no domingo
+plt.close('all')
+
+valor_conta_gorjetas_domingo = gorjetas.query(
+    "dia_da_semana == 'Domingo'").valor_da_conta
+valor_conta_sabado = gorjetas.query(
+    "dia_da_semana == 'Sábado'").valor_da_conta
+
+# Statistics parameter
+r_days_of_week = ranksums(
+    valor_conta_gorjetas_domingo, valor_conta_sabado)
+
+print(
+    "Due to pvalue: {:.2f} is much greater than 0.05, both distribution are similar, so we choose Null Hypothesis:\n A distribuição da taxa da gorjeta é a mesma nos dois grupos".format(r_days_of_week.pvalue))
