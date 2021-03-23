@@ -55,7 +55,7 @@ figure_number = 1
 plt.figure(figure_number, figsize)
 graphico_valor_gorjeta = sns.scatterplot(x='valor_da_conta', y='gorjeta',
                                          data=gorjetas)
-graphico_valor_gorjeta.set_title('Gráfico valor da gorjeta')
+graphico_valor_gorjeta.set_title('Valor da gorjeta')
 graphico_valor_gorjeta.figure.suptitle('scatterlot')
 # Visualmente, a gorjeta aumenta com o valor da conta
 print(f"Temos um total de {gorjetas.shape[0]} registros. \n")
@@ -71,7 +71,7 @@ graphico_valor_gorjeta_proporcional = sns.scatterplot(x='valor_da_conta',
                                                         y='porcentagem',
                                                         data=gorjetas)
 graphico_valor_gorjeta_proporcional.set_title(
-    'Gráfico valor da gorjeta proporcional')
+    'Valor da gorjeta proporcional')
 graphico_valor_gorjeta_proporcional.figure.suptitle('scatterlot')
 # Visualmente, a gorjeta não aumenta proporcionalmente com o valor da conta
 
@@ -83,7 +83,7 @@ grafico_valorgorjeta_porcentagem_linha = sns.relplot(x='valor_da_conta',
                                                      kind='line',
                                                      data=gorjetas)
 grafico_valorgorjeta_porcentagem_linha.set_titles(
-    'Gráfico Valor Gorjeta x Porcentagem')
+    'Valor Gorjeta x Porcentagem')
 grafico_valorgorjeta_porcentagem_linha.fig.suptitle('relplot, kind=line')
 # draw a scatterplot of two variables, x and y, and then fit the regression
 # model y ~ x and plot the resulting regression line and a 95% confidence
@@ -94,7 +94,7 @@ plt.figure(figure_number, figsize)
 grafico_valor_gorjeta_porcentagem_regressao = sns.lmplot(x='valor_da_conta',
                                                          y='porcentagem',
                                                          data=gorjetas)
-grafico_valor_gorjeta_porcentagem_regressao.set_titles('Gráfico Valor  \
+grafico_valor_gorjeta_porcentagem_regressao.set_titles('Valor  \
                                                          Gorjeta x Porcentagem\
                                                               - Regressão')
 grafico_valor_gorjeta_porcentagem_regressao.fig.suptitle('lmplot')
@@ -114,7 +114,7 @@ grafico_valorgorjetas_gorjetas_vertical = sns.catplot(x='sobremesa',
                                                       y='gorjeta',
                                                       data=gorjetas)
 grafico_valorgorjetas_gorjetas_vertical.set_titles(
-    'Gráfico Valor Gorjeta x Gorjetas - Vertical')
+    'Valor Gorjeta x Gorjetas - Vertical')
 grafico_valorgorjetas_gorjetas_vertical.fig.suptitle('catplot')
 
 
@@ -127,7 +127,7 @@ graphico_valorgorjeta_gorjeta_distribuicao = sns.relplot(
     hue='sobremesa',
     data=gorjetas)
 graphico_valorgorjeta_gorjeta_distribuicao.set_titles(
-    'Gráfico Valor Gorjeta x Gorjetas - Distribuição')
+    'Valor Gorjeta x Gorjetas - Distribuição')
 graphico_valorgorjeta_gorjeta_distribuicao.fig.suptitle(
     'relplot, hue=sobremesa')
 
@@ -164,7 +164,7 @@ grafico_valorgorjeta_regressao = sns.lmplot(
     col='sobremesa', hue='sobremesa',
     data=gorjetas)
 grafico_valorgorjeta_regressao.set_titles(
-    "Gráfico Valor Gorjeta x Gorjetas - Regressão")
+    "Valor Gorjeta x Gorjetas - Regressão")
 grafico_valorgorjeta_regressao.fig.suptitle(
     'lmplot, hue=sobremesa, col=sobremesa')
 
@@ -179,7 +179,7 @@ graphico_valorgorjeta_porcentagem_regressao = sns.lmplot(
     data=gorjetas)
 
 graphico_valorgorjeta_porcentagem_regressao.set_titles(
-    "Gráfico Valor Porcentagem x Gorjetas - Regressão")
+    "Valor Porcentagem x Gorjetas - Regressão")
 graphico_valorgorjeta_porcentagem_regressao.fig.suptitle(
     'lmplot, hue=sobremesa, col=sobremesa')
 print("Visualmente, existe uma diferença no valor da gorjeta daqueles que  pediram sobremesa e não pediram sobremesa. Entretanto, essa diferença é muito sutil, vamos fazer um cálculo estatístico a respeito")
@@ -190,8 +190,6 @@ print("\nHipótese Nula:\n A distribuição da taxa da gorjeta é a mesma nos do
 
 print("\nHipótese Não Nula:\n A distribuição da taxa da gorjeta não é a mesma nos dois grupos")
 
-plt.close('all')
-
 # first lets take the percentage of everyone who ordered dessert
 
 porcentagem_gorjetas = gorjetas.query("sobremesa == 'Sim'").porcentagem
@@ -199,3 +197,37 @@ porcentagem_nao_gorjetas = gorjetas.query("sobremesa == 'Não'").porcentagem
 
 # Statistics parameter
 r = ranksums(porcentagem_gorjetas, porcentagem_nao_gorjetas)
+
+print("Due to pvalue: {:.2f} is much greater than 0.05, both distribution are similar, so we choose Hipótese Nula:\n A distribuição da taxa da gorjeta é a mesma nos dois grupos")
+
+# Now lets evaluate if day of week affect mean tip value and its ditribution
+
+print(gorjetas.dia_da_semana.unique())
+# categorical plot of days
+figure_number += 1
+plt.figure(figure_number, figsize)
+grafico_diasemana_gorjetas_categorico = sns.catplot(
+    x='dia_da_semana',
+    y='gorjeta',
+    data=gorjetas)
+grafico_diasemana_gorjetas_categorico.set_titles(
+    'Valor Gorjeta x Dia da semana')
+
+figure_number += 1
+plt.figure(figure_number, figsize)
+grafico_diasemana_porcentagem_gorjetas = sns.relplot(
+    x='valor_da_conta', y='porcentagem',
+    col='dia_da_semana',
+    hue='dia_da_semana', data=gorjetas)
+grafico_diasemana_porcentagem_gorjetas.set_titles(
+    'Porcentagem da gorjeta x Dia da semana')
+
+# evaluate proportionally
+figure_number += 1
+plt.figure(figure_number, figsize)
+grafico_diasemana_porcentagem_gorjetas_regressao = sns.lmplot(
+    x='valor_da_conta', y='porcentagem',
+    col='dia_da_semana',
+    hue='dia_da_semana', data=gorjetas)
+grafico_diasemana_porcentagem_gorjetas_regressao.set_titles(
+    'Porcentagem da gorjeta x Dia da semana')
