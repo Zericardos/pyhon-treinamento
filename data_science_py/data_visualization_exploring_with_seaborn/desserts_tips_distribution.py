@@ -266,3 +266,44 @@ r_days_of_week = ranksums(
 
 print(
     "Due to pvalue: {:.2f} is much greater than 0.05, both distribution are similar, so we choose Null Hypothesis:\n A distribuição da taxa da gorjeta é a mesma nos dois grupos".format(r_days_of_week.pvalue))
+
+# Now lets evaluete if lunch or dinner have relevance over tips
+# gorjetas.hora_do_dia.unique()
+figure_number += 1
+plt.figure(figure_number, figsize)
+grafico_valorgorjetas_gorjetas_vertical = sns.catplot(x='sobremesa',
+                                                      y='gorjeta',
+                                                      data=gorjetas)
+grafico_valorgorjetas_gorjetas_vertical.set_titles(
+    'Valor Gorjeta x Gorjetas - Vertical')
+grafico_valorgorjetas_gorjetas_vertical.fig.suptitle('catplot')
+
+# We see that both categories have similar values and there a lot, so we'll
+# plot the same graph again, but with parameter kind='swarm' to differentiate
+# them
+figure_number += 1
+plt.figure(figure_number, figsize)
+grafico_valorgorjetas_gorjetas_espalhado = sns.catplot(
+    x='sobremesa',
+    y='gorjeta',
+    kind='swarm',
+    data=gorjetas)
+grafico_valorgorjetas_gorjetas_espalhado.set_titles(
+    'Valor Gorjeta x Gorjetas - Vertical')
+grafico_valorgorjetas_gorjetas_espalhado.fig.suptitle(
+    "catplot, kind='swarm'"
+)
+
+# To better visualization we use violinplot
+figure_number += 1
+plt.figure(figure_number, figsize)
+grafico_valorgorjetas_gorjetas_violino = sns.violinplot(
+    x='sobremesa',
+    y='gorjeta',
+    kind='swarm',
+    data=gorjetas)
+grafico_valorgorjetas_gorjetas_violino.set_titles(
+    'Valor Gorjeta x Gorjetas - Vertical')
+grafico_valorgorjetas_gorjetas_violino.fig.suptitle(
+    "catplot, kind='swarm'"
+)
