@@ -11,7 +11,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-tips = pd.read_csv('tips.csv')
+tips = pd.read_csv('tips_atualizado.csv')
 
 renomear = {
     'total_bill': 'valor_da_conta',
@@ -50,7 +50,7 @@ gorjetas.hora_do_dia = gorjetas.hora_do_dia.map(hora)
 # Valor da conta e da gorjeta
 
 figsize = (21, 10)
-plt.close('all')
+# plt.close('all')
 figure_number = 1
 plt.figure(figure_number, figsize)
 graphico_valor_gorjeta = sns.scatterplot(x='valor_da_conta', y='gorjeta',
@@ -253,7 +253,7 @@ print("O número de pessoas para cada dia é: \n{}"
 
 # Non-Null Hypothesis: A distribuição do valor da conta não é igual no sábado
 # e no domingo
-plt.close('all')
+# plt.close('all')
 
 valor_conta_gorjetas_domingo = gorjetas.query(
     "dia_da_semana == 'Domingo'").valor_da_conta
@@ -271,11 +271,12 @@ print(
 # gorjetas.hora_do_dia.unique()
 figure_number += 1
 plt.figure(figure_number, figsize)
-grafico_valorgorjetas_gorjetas_vertical = sns.catplot(x='sobremesa',
-                                                      y='gorjeta',
-                                                      data=gorjetas)
+grafico_valorgorjetas_gorjetas_vertical = sns.catplot(
+    x='hora_do_dia',
+    y='valor_da_conta',
+    data=gorjetas)
 grafico_valorgorjetas_gorjetas_vertical.set_titles(
-    'Valor Gorjeta x Gorjetas - Vertical')
+    'Valor da Conta x Hora do Dia- Vertical')
 grafico_valorgorjetas_gorjetas_vertical.fig.suptitle('catplot')
 
 # We see that both categories have similar values and there a lot, so we'll
@@ -284,12 +285,11 @@ grafico_valorgorjetas_gorjetas_vertical.fig.suptitle('catplot')
 figure_number += 1
 plt.figure(figure_number, figsize)
 grafico_valorgorjetas_gorjetas_espalhado = sns.catplot(
-    x='sobremesa',
-    y='gorjeta',
-    kind='swarm',
+    x='hora_do_dia',
+    y='valor_da_conta',
     data=gorjetas)
 grafico_valorgorjetas_gorjetas_espalhado.set_titles(
-    'Valor Gorjeta x Gorjetas - Vertical')
+    'Valor da Conta x Hora do Dia- Vertical Espalhado')
 grafico_valorgorjetas_gorjetas_espalhado.fig.suptitle(
     "catplot, kind='swarm'"
 )
@@ -298,12 +298,68 @@ grafico_valorgorjetas_gorjetas_espalhado.fig.suptitle(
 figure_number += 1
 plt.figure(figure_number, figsize)
 grafico_valorgorjetas_gorjetas_violino = sns.violinplot(
-    x='sobremesa',
-    y='gorjeta',
-    kind='swarm',
+    x='hora_do_dia',
+    y='valor_da_conta',
     data=gorjetas)
-grafico_valorgorjetas_gorjetas_violino.set_titles(
-    'Valor Gorjeta x Gorjetas - Vertical')
-grafico_valorgorjetas_gorjetas_violino.fig.suptitle(
-    "catplot, kind='swarm'"
+grafico_valorgorjetas_gorjetas_violino.set_title(
+    'Valor Gorjeta x Gorjetas - Violino')
+grafico_valorgorjetas_gorjetas_violino.figure.suptitle(
+    "violinplot"
 )
+
+# It seems that dinner average is greater than lunch. We'll confirm that with
+# boxplot
+figure_number += 1
+plt.figure(figure_number, figsize)
+grafico_valorgorjetas_gorjetas_box = sns.boxplot(
+    x='hora_do_dia',
+    y='valor_da_conta',
+    data=gorjetas)
+grafico_valorgorjetas_gorjetas_box.set_title(
+    'Valor Gorjeta x Gorjetas - Boxplot')
+# Now we see confirm that dinner distribution has average value greater than
+# lunch
+
+# Last, we'll make histograms, but first we must execute a query
+almoco = gorjetas.query("hora_do_dia == 'Almoço'")
+jantar = gorjetas.query("hora_do_dia == 'Jantar'")
+
+figure_number += 1
+plt.figure(figure_number, figsize)
+sns.distplot(almoco.valor_da_conta, kde=False)
+
+figure_number += 1
+plt.figure(figure_number, figsize)
+sns.distplot(jantar.valor_da_conta, kde=False)
+
+# So lets take a numerical idea about these distribution
+print(gorjetas.groupby(['hora_do_dia']).mean()[[
+    'valor_da_conta', 'gorjeta', 'porcentagem']])
+
+# Third hypothesis test
+
+# Null Hypothesis: A distribuição do valor da conta é igual no jantar e no
+# almoço
+
+# Alternative Hypothesis: A distribuição do valor da conta não é igual no
+# jantar e no almoço
+# plt.close('all')
+r3 = ranksums(jantar.valor_da_conta, almoco.valor_da_conta)
+print("Due to pvalue: {:.4f} is smaller than 0.05, both distribution are different, so we choose Hipótese Alternativa:\n A distribuição do valor da conta não é igual no jantar e no almoço".format(r3.pvalue))
+
+# Fourth hypothesis test
+
+# Null Hypothesis: A distribuição da porcentagem do valor da conta é igual no
+# jantar e no almoço
+
+# Alternative Hypothesis: A distribuição da porcentagem do valor da conta não é
+# igual no jantar e no almoço
+almoco_porcentagem = gorjetas.query("hora_do_dia == 'Almoço'").porcentagem
+jantar_porcentagem = gorjetas.query("hora_do_dia == 'Jantar'").porcentagem
+
+r4 = ranksums(almoco_porcentagem, jantar_porcentagem)
+print("Due to pvalue: {:.2f} is greater than 0.05, both distribution are similar, so we choose Hipótese Nula:\n A distribuição da porcentagem do valor da conta é igual no jantar e no almoço".format(r4.pvalue))
+
+# Rodar o algoritmo com Strategy, criar classes e métodos. Depois, poder fazer
+# rodá-lo no terminal dando o arquivo de entrada, há dois!!!
+# Automatizar o teste de hipótese também ;-)
