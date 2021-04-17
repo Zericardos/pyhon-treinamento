@@ -2,106 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54960ea5-34dc-410f-bebe-47671f4faae5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/python.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/analise_alucel.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/analise_cafelura.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/analise_chocolura.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/analise_vendaspordia.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/atividade_dados_nulos.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/atividade_dados_nulos.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/data/alucar.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/data/alucel.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/data/cafelura.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/data/chocolura.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/data/dias_final_de_semana.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/data/newsletter_alucar.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/data/vendas_por_dia.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/newsletter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/plot_timeseries.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/teste_funcoes.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data_science_py/intro_time_series_analysis/time_series.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/discount.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/discount_calculator.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_1/class.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_1/class_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_1/class_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_1/definition_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_1/definition_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_1/instance_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_1/instance_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_1/typecheck_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_1/typecheck_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_2/abstract_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_2/abstract_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_2/composition_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_2/composition_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_2/inheritance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_2/inheritance_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_2/inheritance_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_2/interface_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_2/interface_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_2/multiple_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_2/multiple_inheritance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_2/multiple_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_3/magicattr_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_3/magicattr_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_3/magiccall_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_3/magiccall_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_3/magiceq_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_3/magiceq_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_3/magicstr.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_3/magicstr_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_3/magicstr_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_4/dataclass_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_4/dataclass_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_4/datadefault_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_4/datadefault_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_4/immutable_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_4/immutable_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_4/postinit_finished.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/ex_files_python_object_programming/exercise_files/ch_4/postinit_start.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/i_o/contato.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/i_o/contato_utilidades.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/i_o/dados/contatos-escrita.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/i_o/dados/contatos.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/i_o/dados/contatos.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/i_o/dados/contatos.p" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/i_o/dao.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/i_o/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/i_o/nao_existe.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/i_o/principal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled_checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/Untitled_checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_science_py/data_visualization_exploring_with_seaborn/catplot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data_science_py/data_visualization_exploring_with_seaborn/catplot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_science_py/data_visualization_exploring_with_seaborn/catplot_kind_swarm.png" beforeDir="false" afterPath="$PROJECT_DIR$/data_science_py/data_visualization_exploring_with_seaborn/catplot_kind_swarm.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_science_py/data_visualization_exploring_with_seaborn/desserts_tips_distribution.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_science_py/data_visualization_exploring_with_seaborn/desserts_tips_distribution.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_science_py/data_visualization_exploring_with_seaborn/kind_line.png" beforeDir="false" afterPath="$PROJECT_DIR$/data_science_py/data_visualization_exploring_with_seaborn/kind_line.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_science_py/data_visualization_exploring_with_seaborn/tips.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_science_py/data_visualization_exploring_with_seaborn/tips.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_science_py/data_visualization_exploring_with_seaborn/tips_atualizado.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_science_py/data_visualization_exploring_with_seaborn/tips_atualizado.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_science_py/data_visualization_exploring_with_seaborn/violin_plot.png" beforeDir="false" afterPath="$PROJECT_DIR$/data_science_py/data_visualization_exploring_with_seaborn/violin_plot.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_science_py/pandas_io/next_class.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data_science_py/pandas_io/next_class.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_science_py/pandas_io/registration_per_course.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_science_py/pandas_io/registration_per_course.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_science_py/pandas_refazer/aluguel_amostra.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_science_py/pandas_refazer/aluguel_amostra.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_science_py/pandas_refazer/aula_8_python_pandas/Criando_Agrupamentos.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_science_py/pandas_refazer/aula_8_python_pandas/Criando_Agrupamentos.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/machine_learning_py/dealing_with_data_of_many_dimensions/exames.csv" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_py/dealing_with_data_of_many_dimensions/exames.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/machine_learning_py/dealing_with_data_of_many_dimensions/machine_learning_dealing__with_data_of_many_dimensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_py/dealing_with_data_of_many_dimensions/machine_learning_dealing__with_data_of_many_dimensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/machine_learning_py/dealing_with_data_of_many_dimensions/violin_plot_splitted_first_10_exams.png" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_py/dealing_with_data_of_many_dimensions/violin_plot_splitted_first_10_exams.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/machine_learning_py/machine_learning_sklearn/aluguel_amostra.csv" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_py/machine_learning_sklearn/aluguel_amostra.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/machine_learning_py/machine_learning_sklearn/car_table.csv" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_py/machine_learning_sklearn/car_table.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/machine_learning_py/machine_learning_sklearn/dot_data.dot" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_py/machine_learning_sklearn/dot_data.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/machine_learning_py/machine_learning_sklearn/dot_data2.dot" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_py/machine_learning_sklearn/dot_data2.dot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/machine_learning_py/machine_learning_sklearn/dot_data3.dot" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_py/machine_learning_sklearn/dot_data3.dot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/machine_learning_py/ml_background/testing_models_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_py/ml_background/testing_models_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/programacao_py/avancando_oo_py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/avancando_oo_py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/programacao_py/avancando_oo_py/create_playlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/avancando_oo_py/create_playlist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/budget.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/budget.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/tax_calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/tax_calculator.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/discount.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/discount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/discount_calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/discount_calculator.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/taxes.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/taxes.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,6 +29,36 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunManager">
+    <configuration name="discount_calculator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/programacao_py/design_patterns_python_i" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/programacao_py/design_patterns_python_i/discount_calculator.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.discount_calculator" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -132,5 +70,16 @@
       <updated>1618658737296</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -8,14 +8,17 @@ Created on Sat Mar 27 07:32:10 2021
 
 
 class DiscountCalculator:
-    def calcs(budget):
-        """ É feita uma cadeia de descontos em que um desconto chama o próximo
+    def calcs(orcamento):
+        """
+        Esse Design Patterns chama-se Chain of Responsability
+
+        É feita uma cadeia de descontos em que um desconto chama o próximo
         e assim por diante até o fim da cadeia, em que não há desconto. Assim
         são feitos descontos sucessivos.
-        Esse Design Patterns chama-se Chain of Responsability"""
+        """
         discount = Discount5MoreItens(
             Discount500MoreReais(NoDiscount)
-        ).calcs(budget)
+        ).calcs(orcamento)
         return discount
 
 

@@ -10,7 +10,7 @@ Created on Tue Mar 23 05:24:49 2021
 class TaxCalculator(object):
     def performs_calculation(self, budget, tax):
 
-        calculated_tax = tax.calculates_tax(budget)
+        calculated_tax = tax.calcula(budget)
 
         print(f"Cálculo do imposto {tax.__str__()}: " + str(calculated_tax))
 
@@ -38,3 +38,7 @@ if __name__ == '__main__':
     tax_calculator.performs_calculation(orcamento, ISS())
     tax_calculator.performs_calculation(orcamento, ICPP())
     tax_calculator.performs_calculation(orcamento, IKCV())
+    tax_calculator.performs_calculation(orcamento, IKCV(ICMS()))
+    tax_calculator.performs_calculation(orcamento, IKCV(ISS()))
+    tax_calculator.performs_calculation(orcamento, ICMS(IKCV()))
+    tax_calculator.performs_calculation(orcamento, IKCV(ICPP()))

@@ -9,7 +9,7 @@ Created on Sat Mar 27 08:37:47 2021
 # We have a cumulative discount
 
 
-class Discount5MoreItens:
+class Discount5MoreItens(object):
     def __init__(self, next_discount):
         self.__next_discount = next_discount
 
@@ -21,7 +21,7 @@ class Discount5MoreItens:
             return self.__next_discount.calcs(budget)
 
 
-class Discount500MoreReais:
+class Discount500MoreReais(object):
     def __init__(self, next_discount):
         self.__next_discount = next_discount
 
