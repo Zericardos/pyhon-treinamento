@@ -76,9 +76,37 @@ class ICMS(Imposto):
         return 'ICMS' + str(Imposto.__str__(self))
 
 
-class ISS(Imposto):
-    def calcula(self, orcamento):
+def IPVX(metodo_calcula):
+    """
+    Chama o cálculo do imposto do ISS, pega o resultado e soma com R$ 50,00
 
+    Nosso decorator empacotará o método metodo_calcula. Esse empacotador:
+        wrapper recebe o self da classe em que está decorada: ISS e o argumento
+        do metodo: orcamento
+    Returns
+        metodo_calcula + 50.0
+
+    """
+
+    def wrapper(self, orcamento):
+        return metodo_calcula(self, orcamento) + 50.0
+    return wrapper
+
+
+class ISS(Imposto):
+    @IPVX
+    def calcula(self, orcamento):
+        """
+        Calcula o imposto ISS
+
+        O primeiro ponto, é que nosso decorator recebe como parâmetro a
+        função o método na qual foi adicionado. No caso, a função IPVX recebe a
+        função calcula. Lembre-se que em Python isso é possível, uma vez que
+        funções são cidadãos de primeira classe e podem ser armazenadas em
+        variável e também passadas com parâmetro.
+        Toda vez que o método ISS.calcula for invocado, ele chamará o decorador
+        IPVX e aplicará sua função
+        """
         return orcamento.value * .06 + self.calculo_do_outro_imposto(orcamento)
 
     def __str__(self):
