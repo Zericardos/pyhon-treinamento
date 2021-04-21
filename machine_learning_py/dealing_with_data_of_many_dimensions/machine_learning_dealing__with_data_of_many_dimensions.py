@@ -22,10 +22,10 @@ import seaborn as sns
 results_diagnostics = pd.read_csv('exames.csv')
 
 # First we must analyse our data
-# results_diagnostics.head()
-# results_diagnostics.isnull.any()
+results_diagnostics.head()
+results_diagnostics.isnull.any()
 # We see that last column has NaN values, so how many?
-# results_diagnostics.isnull.sum() -> 419
+results_diagnostics.isnull.sum()  # -> 419
 # We have 569 values, but 419 with NaN in exame_33. This represents
 # 74%, a lot. So we'll drop this column
 
@@ -127,3 +127,6 @@ def violin_graph(
 # shows a constant distribution, that adds no information, so we discard it
 # In adition, we create a function to plot the graph everytime we need
 violin_graph(standardized_exams_values, 21, 28)
+"""Qual o conjunto de features que me dará o melhor resultado?
+O método RFECV  nos fornece essa técnica"""
+from sklearn.feature_selection import RFE

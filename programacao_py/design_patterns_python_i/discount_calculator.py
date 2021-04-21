@@ -25,8 +25,8 @@ class DiscountCalculator:
 # tester
 if __name__ == '__main__':
 
-    from budget import Budget
-    from budget import Item
+    from orcamento import Budget
+    from orcamento import Item
     from discount import Discount5MoreItens
     from discount import Discount500MoreReais
     from discount import NoDiscount

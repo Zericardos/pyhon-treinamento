@@ -10,7 +10,7 @@ Created on Tue Mar 23 05:24:49 2021
 class Budget(object):
     def __init__(self):
         """
-        Inits Budget
+        Init Budget
 
         Returns
         -------
@@ -19,9 +19,17 @@ class Budget(object):
         """
         self.__itens = []
 
-    # a budget can't variable, must be have a fixed value, so we use property decorator
     @property
-    def value(self):
+    def valor(self):
+        """
+        Retorna o valor do orçamento
+
+        Returns
+        -------
+        total : Float
+            Soma o valor da cada item e retorna o valor total do orçamento
+
+        """
         total = 0.0
         for item in self.__itens:
             total += item.value

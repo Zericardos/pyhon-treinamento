@@ -2,20 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54960ea5-34dc-410f-bebe-47671f4faae5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programacao_py/dicionarios_sets/dicionarios.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programacao_py/dicionarios_sets/frequencialetras.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/programacao_py/dicionarios_sets/sets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/machine_learning_py/dealing_with_data_of_many_dimensions/machine_learning_dealing__with_data_of_many_dimensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_py/dealing_with_data_of_many_dimensions/machine_learning_dealing__with_data_of_many_dimensions.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/machine_learning_py/ml_background/testing_models_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_py/ml_background/testing_models_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/programacao_py/avancando_oo_py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/avancando_oo_py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/programacao_py/avancando_oo_py/create_playlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/avancando_oo_py/create_playlist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/discount.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/discount.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/budget.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/orcamento.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/discount_calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/discount_calculator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/taxes.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/taxes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/tax_calculator.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/design_patterns_python_i/tax_calculator.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -30,9 +39,30 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.frequencialetras">
+    <configuration name="dicionarios" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/programacao_py/dicionarios_sets" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/programacao_py/dicionarios_sets/dicionarios.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="discount_calculator" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -54,8 +84,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="frequencialetras" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/programacao_py/dicionarios_sets" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/programacao_py/dicionarios_sets/frequencialetras.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.frequencialetras" />
+        <item itemvalue="Python.dicionarios" />
         <item itemvalue="Python.discount_calculator" />
       </list>
     </recent_temporary>
@@ -81,5 +134,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

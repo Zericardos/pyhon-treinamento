@@ -19,8 +19,8 @@ class TaxCalculator(object):
 
 if __name__ == '__main__':
 
-    from budget import Budget
-    from budget import Item
+    from orcamento import Budget
+    from orcamento import Item
     from taxes import ICMS
     from taxes import ISS
     from taxes import ICPP
