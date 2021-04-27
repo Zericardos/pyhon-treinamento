@@ -28,6 +28,7 @@ class Leilao:
         self.__lances = []
 
     def propoe(self, lance: Lance):
+        
         if lance.valor < self.menor_lance:
             self.menor_lance = lance.valor
         if lance.valor > self.maior_lance:
