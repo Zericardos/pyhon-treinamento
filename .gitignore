@@ -1,4 +1,6 @@
 livros_py
+.idea/
+.idea/workspace.xml
 rename_files.py
 sync_linux.py
 data_science_py/pandas_curso
