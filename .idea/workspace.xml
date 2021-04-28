@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="54960ea5-34dc-410f-bebe-47671f4faae5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/ricardo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/machine_learning_py/ml_background/testing_models_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_py/ml_background/testing_models_1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/programacao_py/avancando_oo_py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/avancando_oo_py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/programacao_py/avancando_oo_py/create_playlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/avancando_oo_py/create_playlist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/dominio.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/leilao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/test_dominio.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/test_leilao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/leilao.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/leilao.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/test_leilao.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/test_leilao.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,9 +35,10 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../Downloads/dicionarios_pycharm/IntelliJ.Portuguese.Brazil.Dictionary/portuguese-brazil_without-accents.dic" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.spelling" />
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_leilao.TestLeilao.test_nao_deve_permitir_propor_lance_caso_o_usuario_seja_o_mesmo">
+  <component name="RunManager" selected="Python tests.Unittests for test_leilao.TestLeilao.test_deve_retornar_o_maior_e_o_menor_valor_quando_o_leilao_tiver_tres_lances">
     <configuration name="Unittests for programacao_py.testes_automatizados_tdd.test_leilao" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="python" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -76,20 +78,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;programacao_py.testes_automatizados_tdd.test_leilao&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Unittests for test_dominio.TestAvaliador.test_avalia" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="python" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_dominio.TestAvaliador.test_avalia&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -104,6 +92,20 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_leilao.TestLeilao&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for test_leilao.TestLeilao.test_deve_retornar_o_maior_e_o_menor_valor_quando_o_leilao_tiver_tres_lances" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="python" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_leilao.TestLeilao.test_deve_retornar_o_maior_e_o_menor_valor_quando_o_leilao_tiver_tres_lances&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -137,15 +139,15 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for test_leilao.TestLeilao.test_nao_deve_permitir_propor_lance_caso_o_usuario_seja_o_mesmo" />
+        <item itemvalue="Python tests.Unittests for test_leilao.TestLeilao.test_deve_retornar_o_maior_e_o_menor_valor_quando_o_leilao_tiver_tres_lances" />
         <item itemvalue="Python tests.Unittests for test_leilao.TestLeilao" />
+        <item itemvalue="Python tests.Unittests for test_leilao.TestLeilao.test_nao_deve_permitir_propor_lance_caso_o_usuario_seja_o_mesmo" />
         <item itemvalue="Python tests.Unittests in test_leilao.py" />
-        <item itemvalue="Python tests.Unittests for programacao_py.testes_automatizados_tdd.test_leilao" />
         <item itemvalue="Python tests.Unittests for programacao_py.testes_automatizados_tdd.test_leilao" />
       </list>
     </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="4" Folder0="$PROJECT_DIR$/../../../../Downloads/dicionarios_pycharm/IntelliJ.Portuguese.Brazil.Dictionary" Folder1="$PROJECT_DIR$/../../../../Downloads/dicionarios_pycharm/IntelliJ.Portuguese.Brazil.Dictionary" Folder2="$PROJECT_DIR$/../../../../Downloads/dicionarios_pycharm/IntelliJ.Portuguese.Brazil.Dictionary" Folder3="$PROJECT_DIR$/../../../../Downloads/dicionarios_pycharm/IntelliJ.Portuguese.Brazil.Dictionary" CustomDictionaries="4" CustomDictionary0="$PROJECT_DIR$/../../../../Downloads/dicionarios_pycharm/IntelliJ.Portuguese.Brazil.Dictionary/portuguese-brazil.dic" CustomDictionary1="$PROJECT_DIR$/../../../../Downloads/dicionarios_pycharm/IntelliJ.Portuguese.Brazil.Dictionary/portuguese-brazil_technical-terms.dic" CustomDictionary2="$PROJECT_DIR$/../../../../Downloads/dicionarios_pycharm/IntelliJ.Portuguese.Brazil.Dictionary/portuguese-brazil_technical-terms_without-accents.dic" CustomDictionary3="$PROJECT_DIR$/../../../../Downloads/dicionarios_pycharm/IntelliJ.Portuguese.Brazil.Dictionary/portuguese-brazil_without-accents.dic" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="54960ea5-34dc-410f-bebe-47671f4faae5" name="Default Changelist" comment="" />

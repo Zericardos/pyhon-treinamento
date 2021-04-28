@@ -43,32 +43,23 @@ class TestLeilao(TestCase):
         self.assertEqual(2, quantidade_de_lances_recebidos)  # checar dois lances
 
     def test_nao_deve_permitir_propor_lance_caso_o_usuario_seja_o_mesmo(self):
-        primeiro_lance = self.leilao.propoe(self.lance_jose)
-        novo_lance = Lance(self.jose, 100.0)
-        self.leilao.propoe(novo_lance)
+        try:
+            primeiro_lance = self.leilao.propoe(self.lance_jose)
+            novo_lance = Lance(self.jose, 100.0)
+            self.leilao.propoe(novo_lance)
+            self.fail(msg="Não lançou exceção")
+        except ValueError:
+            quantidade_de_lances_recebidos = len(self.leilao.lances)
 
-        quantidade_de_lances_recebidos = len(self.leilao.lances)
+            self.assertEqual(1, quantidade_de_lances_recebidos)
 
-        self.assertEqual(1, quantidade_de_lances_recebidos)  # Não deixar
-        # passar dois lances de mesmo usuário. Fiz modificação na classe para o
-        # teste passar
+    def nao_deve_permitir_propor_lance_em_ordem_decrescente(self):
+        with self.assertRaises(ValueError):
+            keith = Usuario('Keith')
+            lance_keith = Lance(keith, 789.0)
 
-    def deve_retornar_o_maior_e_o_maior_valor_de_lance_quando_adicionados_em_ordem_decrescente(self):
-        # self.fail()  # se executar essa linha, o programa falha imediatamente
-        keith = Usuario('Keith')
-
-        lance_keith = Lance(keith, 789.0)
-
-        self.append(self.lance_jose)
-        self.leilao.propoe(lance_keith)
-
-
-
-        menor_valor_esperado = 150.0
-        maior_valor_esperado = 789.0
-
-        self.assertEqual(menor_valor_esperado, self.leilao.menor_lance)
-        self.assertEqual(maior_valor_esperado, self.leilao.maior_lance)
+            self.append(self.lance_jose)
+            self.leilao.propoe(lance_keith)
 
     def deve_retornar_o_maior_e_o_maior_valor_de_lance_quando_adicionados_em_ordem_crescente(self):
         keith = Usuario('Keith')
@@ -76,8 +67,6 @@ class TestLeilao(TestCase):
 
         self.leilao.propoe(self.lance_jose)
         self.leilao.propoe(lance_keith)
-
-
 
         menor_valor_esperado = 150.0
         maior_valor_esperado = 789.0
@@ -90,13 +79,11 @@ class TestLeilao(TestCase):
         assiris = Usuario('Assiris')
 
         lance_keith = Lance(keith, 789.0)
-        lance_assiris = Lance(assiris, 150.0)
+        lance_assiris = Lance(assiris, 152.0)
 
         self.leilao.propoe(self.lance_jose)
-        self.leilao.propoe(lance_keith)
         self.leilao.propoe(lance_assiris)
-
-        
+        self.leilao.propoe(lance_keith)
 
         menor_valor_esperado = 150.0
         maior_valor_esperado = 789.0
