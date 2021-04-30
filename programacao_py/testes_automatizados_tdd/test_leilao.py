@@ -18,7 +18,7 @@ class TestLeilao(TestCase):
         """Cria o cenário padrão para todos os métodos.
 
         É carregado antes de qualquer método que for testado"""
-        self.jose = Usuario('José')
+        self.jose = Usuario('José', 200.0)
         self.lance_jose = Lance(self.jose, 150.0)
 
         self.leilao = Leilao('Celular')
@@ -32,7 +32,7 @@ class TestLeilao(TestCase):
         self.assertEqual(1, quantidade_de_lances_recebidos)  # checar um lance
 
     def test_deve_permitir_propor_um_lance_caso_o_ultimo_usuario_seja_diferente(self):
-        keith = Usuario('Keith')
+        keith = Usuario('Keith', 1000.0)
         lance_do_keith = Lance(keith, 780.0)
 
         self.leilao.propoe(self.lance_jose)  # primeiro lance
@@ -55,14 +55,14 @@ class TestLeilao(TestCase):
 
     def nao_deve_permitir_propor_lance_em_ordem_decrescente(self):
         with self.assertRaises(ValueError):
-            keith = Usuario('Keith')
+            keith = Usuario('Keith', 1000.0)
             lance_keith = Lance(keith, 789.0)
 
             self.append(self.lance_jose)
             self.leilao.propoe(lance_keith)
 
     def deve_retornar_o_maior_e_o_maior_valor_de_lance_quando_adicionados_em_ordem_crescente(self):
-        keith = Usuario('Keith')
+        keith = Usuario('Keith', 1000.0)
         lance_keith = Lance(keith, 789.0)
 
         self.leilao.propoe(self.lance_jose)
@@ -75,8 +75,8 @@ class TestLeilao(TestCase):
         self.assertEqual(maior_valor_esperado, self.leilao.maior_lance)
 
     def test_deve_retornar_o_maior_e_o_menor_valor_quando_o_leilao_tiver_tres_lances(self):
-        keith = Usuario('Keith')
-        assiris = Usuario('Assiris')
+        keith = Usuario('Keith', 1000.0)
+        assiris = Usuario('Assiris', 700.0)
 
         lance_keith = Lance(keith, 789.0)
         lance_assiris = Lance(assiris, 152.0)

@@ -4,12 +4,25 @@ import sys
 
 class Usuario:
 
-    def __init__(self, nome):
+    def __init__(self, nome, carteira):
         self.__nome = nome
+        self.__carteira = carteira
+
+    def propoe_lance(self, leilao, valor):
+        if valor <= self.__carteira:
+            lance = Lance(self, valor)
+            leilao.propoe(lance)
+            self.__carteira -= valor
+        else:
+            raise ValueError(f"Valor proposto maior que o disponível na carteira: {self.__carteira}")
 
     @property
     def nome(self):
         return self.__nome
+
+    @property
+    def carteira(self):
+        return self.__carteira
 
 
 class Lance:
@@ -41,24 +54,3 @@ class Leilao:
     @property
     def lances(self):
         return self.__lances[:]  # Cópia rasa para não alterar a nossa lista de
-    # lances
-
-"""
-class Avaliador:
-    ""Avalia  os lances e atualiza com o valor dado
-
-    ""
-    def __init__(self):
-        ""Inicia o Avaliador""
-        self.maior_lance = sys.float_info.min  # Para garantir o maior lance
-        self.menor_lance = sys.float_info.max  # Para garantir o menor lance
-
-
-    def avalia(self, leilao: Leilao):
-        ""Faz a avaliação""
-        for lance in leilao.lances:
-            if lance.valor < self.menor_lance:
-                self.menor_lance = lance.valor
-            if lance.valor > self.maior_lance:
-                self.maior_lance = lance.valor
-"""
