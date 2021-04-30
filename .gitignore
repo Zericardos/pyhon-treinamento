@@ -1,9 +1,6 @@
-livros_py
-.idea/
-.idea/workspace.xml
-rename_files.py
-sync_linux.py
+.idea
 data_science_py/pandas_curso
+livros_py
 machine_learning_py/ml_background/aula1.py
 machine_learning_py/ml_background/aula2_classifica_busca.py
 machine_learning_py/ml_background/aula2_dados.py
@@ -39,3 +36,7 @@ programacao_py/avancando_oo_py/aula3_polimorfismo.py
 programacao_py/descubra_o_python
 programacao_py/Ex_Files_Python_Object_Programming
 programacao_py/orientacao_objetos_python
+programacao_py/testes_automatizados_tdd/.pytest_cache
+rename_files.py
+sync_linux.py
+venv
