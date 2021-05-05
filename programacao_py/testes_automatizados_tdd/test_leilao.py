@@ -1,5 +1,6 @@
 from unittest import TestCase
 
+from programacao_py.testes_automatizados_tdd.excecoes import LanceInvalido
 from programacao_py.testes_automatizados_tdd.leilao import Leilao, Lance, \
     Usuario
 
@@ -45,20 +46,20 @@ class TestLeilao(TestCase):
     def test_nao_deve_permitir_propor_lance_caso_o_usuario_seja_o_mesmo(self):
         try:
             primeiro_lance = self.leilao.propoe(self.lance_jose)
-            novo_lance = Lance(self.jose, 100.0)
+            novo_lance = Lance(self.jose, 50.0)
             self.leilao.propoe(novo_lance)
             self.fail(msg="Não lançou exceção")
-        except ValueError:
+        except LanceInvalido:
             quantidade_de_lances_recebidos = len(self.leilao.lances)
 
             self.assertEqual(1, quantidade_de_lances_recebidos)
 
     def nao_deve_permitir_propor_lance_em_ordem_decrescente(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(LanceInvalido):
             keith = Usuario('Keith', 1000.0)
             lance_keith = Lance(keith, 789.0)
 
-            self.append(self.lance_jose)
+            self.leilao.propoe(self.lance_jose)
             self.leilao.propoe(lance_keith)
 
     def deve_retornar_o_maior_e_o_maior_valor_de_lance_quando_adicionados_em_ordem_crescente(self):

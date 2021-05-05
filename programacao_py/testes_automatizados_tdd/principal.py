@@ -1,7 +1,8 @@
-from dominio import Usuario, Lance, Leilao, Avaliador
+from leilao import Usuario, Lance, Leilao
 
-jose = Usuario('José')
-keith = Usuario('Keith')
+
+jose = Usuario('José', 200)
+keith = Usuario('Keith', 1000)
 
 lance_keith = Lance(keith, 789.0)
 lance_jose = Lance(jose, 150.0)
@@ -19,8 +20,6 @@ for lance in leilao.lances:
     print(f"O usuário {lance.usuario.nome} deu o lance de "
           f"{lance.valor:.2f} reais")
 
-avaliador = Avaliador()
-avaliador.avalia(leilao)
 
-print(f"O menor lance foi de {avaliador.menor_lance:.2f} e o maior lance foi"
-      f" de {avaliador.maior_lance:.2f}")
+print(f"O menor lance foi de {leilao.menor_lance:.2f} e o maior lance foi"
+      f" de {leilao.maior_lance:.2f}")
