@@ -1,7 +1,7 @@
-.idea
+*.idea*
 data_science_py/pandas_curso
 livros_py
-*__pycache__
+*__pycache__*
 machine_learning_py/ml_background/aula1.py
 machine_learning_py/ml_background/aula2_classifica_busca.py
 machine_learning_py/ml_background/aula2_dados.py

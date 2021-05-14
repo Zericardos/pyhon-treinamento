@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="54960ea5-34dc-410f-bebe-47671f4faae5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/programacao_py/dubles_de_testes/colecao/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/dubles_de_testes/colecao/livros.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/dubles_de_testes/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/dubles_de_testes/setup.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/dubles_de_testes/tests/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/dubles_de_testes/tests/test_livros.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/excecoes.py" afterDir="false" />
+    <list default="true" id="54960ea5-34dc-410f-bebe-47671f4faae5" name="Default Changelist" comment="Adicionado dublês com exceções">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/machine_learning_py/ml_background/testing_models_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/machine_learning_py/ml_background/testing_models_1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programacao_py/avancando_oo_py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/avancando_oo_py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programacao_py/avancando_oo_py/create_playlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/avancando_oo_py/create_playlist.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/leilao.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/leilao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/principal.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/principal.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/test_leilao.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/test_leilao.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/tests/test_usuario.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/testes_automatizados_tdd/tests/test_usuario.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/programacao_py/dubles_de_testes/tests/test_livros.py" beforeDir="false" afterPath="$PROJECT_DIR$/programacao_py/dubles_de_testes/tests/test_livros.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -166,6 +153,14 @@
       <option name="presentableId" value="Default" />
       <updated>1618658737296</updated>
     </task>
+    <task id="LOCAL-00001" summary="Adicionado dublês com exceções">
+      <created>1620182519567</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1620182519567</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,5 +174,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Adicionado dublês com exceções" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adicionado dublês com exceções" />
   </component>
 </project>
